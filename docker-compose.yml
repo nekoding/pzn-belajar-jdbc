@@ -1,0 +1,11 @@
+version: "3"
+services:
+  database:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_USER: nekoding
+      POSTGRES_PASSWORD: nekoding
+      POSTGRES_DB: java_jdbc
+    ports:
+      - "5432:5432"
